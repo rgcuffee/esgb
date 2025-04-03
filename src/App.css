@@ -1,0 +1,225 @@
+.App {
+  text-align: center;
+  /* background-color: rgb(240, 240, 240); */
+}
+
+h1,
+h2,
+h3 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  font-weight: bold !important;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+#flyer img {
+  width: 90vw;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 5px;
+  object-position: top;
+}
+
+@media (max-width: 600px) {
+  #flyer img {
+    max-height: 300px;
+    /* Adjust header image size for smaller screens */
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.loader-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  text-align: center;
+  padding: 20px;
+  background: #fcece2;
+  color: black;
+}
+
+.register-btn {
+  background-color: #ff9951;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.register-btn:hover {
+  background-color: #d63b00;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  /* Ensure modal is on top */
+}
+
+/* Modal Content */
+.reg-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  max-height: 90%;
+  overflow-y: auto;
+  /* Allow scrolling if the content overflows */
+}
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.2s ease-in-out;
+}
+
+.close-button:hover {
+  color: #ff0000;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+/* Registration Form Styles */
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  /* gap: 15px; */
+}
+
+/* Input, Select, Button Styling */
+.registration-form input,
+.registration-form select,
+.registration-form button {
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* Button Styles */
+.registration-form button {
+  background-color: #ff9951;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.registration-form button:hover {
+  background-color: #45a049;
+}
+
+.registration-form button:disabled {
+  background-color: #ddd;
+}
+
+/* Error Messages */
+.registration-form .error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+
+  /* Modal content padding for mobile */
+  .modal-content {
+    padding: 15px;
+    width: 100%;
+    max-width: 90%;
+  }
+
+  /* Input fields and buttons on smaller screens */
+  .registration-form input,
+  .registration-form select,
+  .registration-form button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  /* Adjusting button font size */
+  .registration-form button {
+    font-size: 16px;
+  }
+}
