@@ -27,7 +27,7 @@ function App() {
           id='flyer'
           //src={`${siteUrl}/wp-content/uploads/2025/04/flyer.png`} // Dynamically sets the image URL
           src={
-            'https://east-siders-giving-back-96c94e.ingress-haven.ewp.live/wp-content/uploads/2025/04/image0-e1743654865373.png'
+            'https://eastsidersgivingback.com/wp-content/uploads/2025/04/image0-e1743654865373.png'
           }
           alt='East Siders Giving Back Flyer'
           style={{
@@ -55,7 +55,19 @@ function App() {
         />
       </Modal>
       <FAQAccordion />
-      <GallerySelector />
+      <div className='banner'>
+        <GallerySelector />
+      </div>
+      <div className='banner' style={{ backgroundColor: '#ffffff' }}>
+        <h2>2024 Sponsors</h2>
+        <img
+          src={
+            'https://eastsidersgivingback.com/wp-content/uploads/2025/04/IMG_20250403_184440.png'
+          }
+          alt='Sponsors'
+          className='sponsor-image'
+        />
+      </div>
     </>
   );
 }

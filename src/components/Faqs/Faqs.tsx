@@ -25,14 +25,19 @@ const faqData: FAQData = {
     {
       question: 'Who benefits from the toy drive?',
       answer:
-        "All donated toys will go to [where is this year's toys going to?] to help bring holiday joy to children in need.",
+        'All donated toys will go to Whitney Elementary School to help bring holiday joy to children in need.',
+    },
+    {
+      question: 'What vendors will be there?',
+      answer:
+        'We’ll have a variety of local vendors, food trucks, and entertainment; such as Mob Dowg, Lot H, Neon Ice, SHOP-CEE, Grafiko Arts, Audio Zone, Las Vegas High School Mariachi Band, Folklorico, and more!',
     },
   ],
   'Car Show Details': [
     {
       question: 'How can I enter my car in the show?',
       answer:
-        'You can register your vehicle online [link] or on-site the day of the event if spots are still available.',
+        'You can register your vehicle online (click the link in the banner above) or on-site the day of the event if spots are still available.',
     },
     {
       question: 'Is there a fee to enter my car in the show?',
@@ -52,7 +57,7 @@ const faqData: FAQData = {
     {
       question: 'What time should I arrive if I’m showing my car?',
       answer:
-        'Roll-in starts at [what time?], and all registered cars should be parked by [what time?].',
+        'Roll-in starts at 8:00AM, and all registered cars should be parked by 10:00AM.',
     },
   ],
   'Toy Drive & Donations': [
@@ -80,7 +85,7 @@ const faqData: FAQData = {
     {
       question: 'How can I volunteer or sponsor the event?',
       answer:
-        'We’d love your support! Email us at [contact info] to get involved.',
+        'We’d love your support! Email us at EastLVGivingBack@gmail.com to get involved.',
     },
   ],
 };

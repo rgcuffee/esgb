@@ -70,6 +70,7 @@
     cursor: pointer;
     font-size: 16px;
     transition: background 0.2s ease-in-out;
+    min-width: 300px
 }
 
 .gallery-button:hover {

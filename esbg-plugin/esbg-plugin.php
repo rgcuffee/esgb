@@ -2,7 +2,7 @@
 /*
 Plugin Name: East Siders Giving Back Plugin
 Description: A WordPress plugin to load a React app.
-Version: 0.1.0 (2025)
+Version: 1.0.0 (2025) April 3
 Author: Richard Cuffee
 */
  
@@ -13,7 +13,7 @@ function enqueue_react_app_plugin() {
     // Enqueue the main CSS file
     wp_enqueue_style(
         'react-app-style',
-        $plugin_url . 'build/static/css/main.38f7ced0.css',
+        $plugin_url . 'build/static/css/main.2d64d1db.css',
         array(), // dependencies
         '1.0'
     );
@@ -21,7 +21,7 @@ function enqueue_react_app_plugin() {
     // Enqueue the main JavaScript file
     wp_enqueue_script(
         'react-app',
-        $plugin_url . 'build/static/js/main.42d9d8b7.js',
+        $plugin_url . 'build/static/js/main.387f1b2f.js',
        array('react', 'react-dom'), // dependencies
         '1.0',
         true // load in footer

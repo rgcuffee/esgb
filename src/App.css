@@ -200,6 +200,12 @@ h3 {
   margin-top: 5px;
 }
 
+.sponsor-image {
+  width: 50vw;
+  height: auto;
+  object-fit: cover
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 600px) {
 
@@ -221,5 +227,9 @@ h3 {
   /* Adjusting button font size */
   .registration-form button {
     font-size: 16px;
+  }
+
+  .sponsor-image {
+    width: 90vw;
   }
 }
